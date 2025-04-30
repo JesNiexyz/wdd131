@@ -1,5 +1,5 @@
-const themeSelector = document.querySelector("select#theme")
-const logoImage = document.querySelector("footer img")
+const themeSelector = document.querySelector("select")
+const logoImage = document.querySelector("img")
 
 function applyTheme(theme){
     if (theme === "dark") {

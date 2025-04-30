@@ -16,6 +16,9 @@
     
     
 }
+.dark #box{
+    border:3px solid white ;
+}
 
 .dark header{
     border-bottom: 5px solid white;
@@ -43,7 +46,7 @@
     max-width: 1000px;
     justify-content: center;
     justify-items: center;
-    
+    border: 3px solid #333;
 
 }
 header{
