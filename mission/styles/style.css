@@ -1,3 +1,26 @@
+.dark{
+    background-color: #333;
+    color: white;
+}
+
+.dark h3{
+    color: #3cb1ff
+}
+
+.dark img{
+    
+    width: 100%;
+    height: 100%;
+    max-width:100px;
+    max-height: 100px;
+    
+    
+}
+
+.dark header{
+    border-bottom: 5px solid white;
+}
+
 #container{
     margin: 0 auto;
 }
@@ -27,6 +50,18 @@ header{
     justify-content: center;
     border-bottom: 5px solid gray;
     padding-bottom: 10px;
+}
+
+label{
+    font-size: 1rem;
+    padding-right: 10px;
+
+}
+
+select{
+    font-size:0.9rem;
+    padding: 2px 5px;
+
 }
 
 nav > h1{
@@ -78,7 +113,7 @@ footer{
 img{
     width: 100%;
     height: 100%;
-    max-width:300px;
-    max-height: 300px;
+    max-width:100px;
+    max-height: 100px;
 
 }
