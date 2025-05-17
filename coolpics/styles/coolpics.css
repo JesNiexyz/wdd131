@@ -37,6 +37,9 @@ nav a{
     color: white;
     display: none;
 }
+nav.menu:not(.hide) a{
+    display: block;
+}
 img{
     width: 100%;
     max-width: 250px;
@@ -59,8 +62,38 @@ figure{
     border: none;
     padding: 0;
     font-size: 1.2rem;
-    margin: 0;
+    margin: 1rem auto;
     font-family: 'Mooli';
+
+}
+.hide {
+    display: none; /*When an element has a class of hide, it hides it entirely, and the inverse happens with show*/
+}
+.show{
+    display: grid;
+}
+#modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .6);
+    position: relative;
+}
+#modal-img{
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+
+}
+#close-viewer{
+    background: var(--primary-color);
+    color: white;
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+    z-index: 10;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
 
 }
 
@@ -71,8 +104,16 @@ figure{
         row-gap: 20px;
         column-gap: 50px;
     }
+    nav{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    nav.show{
+        display: grid;
+    }
     .menu-button{
         display: block;
+        margin: 1rem auto;
     
     }
     nav a{
@@ -83,7 +124,7 @@ figure{
     
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1000px) {
     figure{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
