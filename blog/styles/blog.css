@@ -40,11 +40,15 @@ nav li a{
  }
  #main-container{
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 1rem;
     object-fit: cover;
     margin-top: 5rem;
     margin-bottom: 5rem;
+ }
+ .book-container{
+   display: grid;
+   grid-template-columns: 1fr 2fr;
  }
  #main-container > div {
     width: 100%;
@@ -62,7 +66,7 @@ nav li a{
     color: var(--primary-color);
     font-family: var(--primary-font);
  }
- #date{
+ .date{
     text-align: center;
     font-family: var(--headline-font);
     font-size: 24px;
@@ -71,4 +75,8 @@ nav li a{
  #book-description{
     margin-left: 2px;
     margin-right: 5px;
+ }
+ #book-image{
+   width: 50%;
+
  }
