@@ -40,27 +40,26 @@ const articles = [
 ]
 console.log(articles[1].title);
 
-const container = document.querySelector('.book-container');
 
-articles.forEach(function(item){
-	
-	
+document.addEventListener('DOMContentLoaded', function() {
+    const container = document.querySelector('.book-container');
 
-	let html =`
-		<div id="book-description"> <!--book description-->
-                <h3 class="date">${item.date}</h3>
-                <p class="bk-desc">${item.ages}</p>
-                <p class="bk-desc">${item.genre}</p>
-                <p class="bk-desc">${item.stars}</p>
-            </div><!--book description-->
-            <div id="book-display"> <!--book display-->
-                <article>
-                <h2 id="book-title">${item.title}</h2>
-                <img id="book-image" src="${item.imgSrc}" alt=${item.imgAlt}>
-                <p id="book-suggestion">${item.description}</p>
-                </article>
-            </div><!--book display-->
-
-		`
-		container.innerHTML += html
-})
+    articles.forEach(function(item){
+        let html =`
+            <div id="book-description"> <!--book description-->
+                    <h3 class="date">${item.date}</h3>
+                    <p class="bk-desc">${item.ages}</p>
+                    <p class="bk-desc">${item.genre}</p>
+                    <p class="bk-desc">${item.stars}</p>
+                </div><!--book description-->
+                <div id="book-display"> <!--book display-->
+                    <article>
+                    <h2 id="book-title">${item.title}</h2>
+                    <img id="book-image" src="${item.imgSrc}" alt="${item.imgAlt}">
+                    <p id="book-suggestion">${item.description}</p>
+                    </article>
+                </div><!--book display-->
+        `
+        container.innerHTML += html
+    });
+});
