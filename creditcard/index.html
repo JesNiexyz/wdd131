@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card</title>
+    <link rel="stylesheet" href="credicard.css">
+    <script src="card.js" defer></script>
+</head>
+<body>
+    <form>
+        <div id="front-card">
+            <div class="front-content">
+                <div class="card-number-row">
+                    <div id="card-number-container">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="16" required>
+                        <p class="errorMsg"></p>
+                    </div> <!--card-number-container-->
+                    <div class="image-container">
+                        <img src="credicard_image.png" alt="Credit Card Image">
+                    </div> <!--image container-->
+                </div> <!--card-number-row-->
+                <div id="cardholder-container">
+                    <label for="card-holder">Card Holder</label>
+                    <input type="text" id="card-holder" placeholder="John Doe">
+                </div> <!--cardholder-->
+                <div class="exp-row">
+                    <label for="card-exp">Expiration</label>
+                    <input type="text" id="card-month" placeholder="MM" maxlength="2">
+                    <input type="text" id="card-year" placeholder="YY" maxlength="2">
+                </div> <!--expiration-->
+                <span id="payment">Total: $199</span>
+            </div><!--front row-->
+        </div><!--front-card-->
+
+        <div id="back-container">
+            <div class="other-back-content">
+                <div id="card-stripe"></div>
+                <!-- Add other back-of-card elements here if needed -->
+            </div>
+            <div id="cvv-container">
+                <label for="card-cvv">CVV</label>
+                <input type="text" id="card-cvv" placeholder="000" maxlength="3">
+            </div>
+        </div><!--back-container-->
+    </form>
+    <button type="button" id="card-btn">Submit</button>
+</body>
+</html>
