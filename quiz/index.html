@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JeoHistory</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles/quiz.css"/>
+  <!-- Link to external JavaScript file - defer ensures it loads after HTML -->
+  <script src="quiz.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>JeoHistory</h1>
+    <p>A Jeopardy-Style Game About LDS Church History</p>
+    <a href="final.html" class="final-jeopardy-link">Go to Final Jeopardy</a>
+  </header>
+
+  <div class="player-setup">
+    <h2>Choose Number of Players</h2>
+    <button class="setup-btn" data-players="1">1 Player</button>
+    <button class="setup-btn" data-players="2">2 Players</button>
+    <button class="setup-btn" data-players="3">3 Players</button>
+    <button class="setup-btn" data-players="4">4 Players</button>
+  </div>
+
+  <div class="main-content">
+    <div class="scoreboard"></div>
+    <div class="board"></div>
+  </div>
+
+  <div id="backdrop"></div>
+
+  <footer>
+    <p>Created for JeoHistory Game Night</p>
+  </footer>
+</body>
+</html>

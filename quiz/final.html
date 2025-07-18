@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Jeopardy</title>
+  <link rel="stylesheet" href="styles/final.css">
+  <script src="final.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Final Jeopardy</h1>
+  </header>
+
+  <main>
+    <section id="final-question-section">
+      <h2>Final Question</h2>
+      <p id="final-question">Which prophet was the secretary of agriculture under President Eisenhower</p>
+    </section>
+
+    <section id="players-section">
+      <h2>Place Your Wagers</h2>
+      <div id="no-players-message" style="display:none;">No players found. Please play the main game first.</div>
+      <div id="players-container"></div>
+    </section>
+
+    <!-- Replace your single submit button with these two -->
+    <button id="reveal-answer-btn">Reveal Answer</button>
+    <button id="submit-results-btn" style="display:none;">Submit Results</button>
+
+    <section id="reveal-answer" style="display: none;">
+      <h2>Reveal & Adjust Scores</h2>
+      <p><strong>Correct Answer:</strong> Ezra Taft Benson</p>
+      <div id="final-scores"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created for JeoHistory</p>
+  </footer>
+
+ 
+</body>
+</html>
