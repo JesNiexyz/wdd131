@@ -1,5 +1,5 @@
 /* Font Imports */
-    @import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Shadows+Into+Light&display=swap');
 
     /* Color Theme */
     :root {
@@ -19,22 +19,6 @@
       padding: 0;
       text-align: center;
       min-height: 100vh;
-    }
-
-    /* Header */
-    header {
-      background-color: var(--primary-color);
-      color: var(--accent3-color);
-      padding: 1rem;
-      font-family: 'Mystery Quest', cursive;
-      letter-spacing: 2px;
-    }
-
-    header h1 {
-      font-family: 'Mystery Quest', cursive;
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      text-shadow: 2px 2px 8px #034078;
     }
 
     /* Player Setup */
@@ -96,24 +80,59 @@
     }
 
         
-    .final-jeopardy-link {
-      display: inline-block;
-      margin: 2rem auto;
-      padding: 0.75rem 2rem;
-      background: linear-gradient(90deg, var(--accent1-color), var(--accent2-color));
-      color: var(--primary-color);
-      border-radius: 8px;
-      font-size: 1.2rem;
-      font-family: 'Mystery Quest', cursive;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
-      transition: background 0.2s, color 0.2s;
-    }
-    .final-jeopardy-link:hover {
-      background: var(--accent2-color);
-      color: var(--accent3-color);
-    }
+   
+.header-logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: var(--primary-color);
+  padding: 1.5rem 0;
+  border-bottom: 4px solid var(--accent1-color);
+}
+
+.jeohistory-logo {
+  height: 90px;
+  width: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  background: var(--accent2-color);
+  padding: 0.5rem;
+}
+
+.header-text h1 {
+  font-family: 'Mystery Quest', cursive;
+  font-size: 2.8rem;
+  margin: 0 0 0.5rem 0;
+  color: var(--accent3-color);
+  text-shadow: 2px 2px 8px #034078;
+}
+
+.header-text p {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.3rem;
+  margin: 0 0 1rem 0;
+  color: var(--accent3-color);
+}
+
+.final-jeopardy-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(90deg, var(--accent1-color), var(--accent2-color));
+  color: var(--primary-color);
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-family: 'Mystery Quest', cursive;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  transition: background 0.2s, color 0.2s;
+}
+.final-jeopardy-link:hover {
+  background: var(--accent2-color);
+  color: var(--accent3-color);
+}
 
     .category {
       background: var(--secondary-color);
